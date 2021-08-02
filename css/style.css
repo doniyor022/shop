@@ -1,0 +1,665 @@
+    @import 'font.css';
+
+    :root {
+      --f700: 'N700';
+      --f400: 'N400';
+      --f900: 'R900';
+      --F100: 'R100';
+      --text_color: #ffffff;
+      --bgn-color: #313131;
+      --main_color: #69CF17;
+    }
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    .button {
+      width: 140px;
+      height: 50px;
+      background-color: #313131;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      color: white;
+      border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+      margin: auto;
+
+    }
+
+    .button__link {
+      color: white;
+      font-family: var(--r400);
+      transition: color 500ms;
+    }
+
+    .button__link:hover {
+      color: grey;
+    }
+
+    /* Contact */
+    .nav {
+      background-color: #313131;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .nav__menu {
+      width: max-content;
+      display: flex;
+      margin-right: 342px;
+      flex-wrap: wrap;
+    }
+
+    .nav__link {
+      display: block;
+      font-family: var(--f400);
+      color: var(--text_color);
+      transition: color 500ms;
+      margin: 15px 0px;
+      flex-wrap: wrap;
+    }
+
+    .nav__link:hover {
+      color: grey;
+    }
+
+    .link1 {
+      margin-right: 79.5px;
+    }
+
+    .link2 {
+      margin-right: 32.5px;
+    }
+
+    .link3 {
+      margin-right: 41.5px;
+    }
+
+    .icons {
+      margin-right: 9px;
+    }
+
+    .logo {
+      margin: 18px 143px 18px 0;
+    }
+
+    .search__items {
+      display: flex;
+      align-items: center;
+    }
+
+    .search__imput {
+      width: 630px;
+      height: 50px;
+      border: 1px solid;
+    }
+
+    .btn-outline-success {
+      transition: color 500ms background 500ms;
+      background-color: #313131;
+      color: white;
+      -webkit-transition: color 500ms background 500ms;
+      -moz-transition: color 500ms background 500ms;
+      -ms-transition: color 500ms background 500ms;
+      -o-transition: color 500ms background 500ms;
+}
+
+    .btn-outline-success:hover {
+      color: #313131;
+      background-color: var(--text_color);
+    }
+
+    /* Product Menu */
+
+    .product__menu {
+      margin-top: 10px;
+    }
+
+    .product__link {
+      color: var(--bgn-color);
+      transition: color 750ms;
+    }
+
+    .product__link:hover {
+      color: grey;
+      text-decoration: underline;
+    }
+    .product__img{
+      background-color: #f3f3f3;
+      transition: 500ms;
+      -webkit-transition: 500ms;
+      -moz-transition: 500ms;
+      -ms-transition: 500ms;
+      -o-transition: 500ms;
+}
+    .product__img:hover{
+      box-shadow: 10px 10px 10px grey;
+    }
+
+    /* Carousel */
+    .carousel- {
+      margin-top: 50px;
+    }
+    .xbox{
+      margin-bottom: 45px;
+    }
+
+    .carousel-indicators {
+      position: sticky;
+      max-height: 740px;
+    }
+
+    .carousel__title {
+      color: #313131;
+      font-size: 48px;
+      margin: 113px 0px 121px 0;
+      width: 550px;
+      text-align: center;
+    }
+
+    .Behruz-carusel-qmadi {
+      height: 15px !important;
+      display: flex;
+      align-items: center;
+    }
+
+    .ellipse {
+      width: 10px !important;
+      height: 10px !important;
+      border-radius: 100%;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      -o-border-radius: 100%;
+    }
+
+    .ellipse.active {
+      width: 15px !important;
+      height: 15px !important;
+      border-radius: 100%;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      -o-border-radius: 100%;
+    }
+
+    
+
+    /* product */
+    .product__grid {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .product__item:nth-of-type(1) {
+      grid-column: span 2;
+      grid-row: span 2;
+      max-height: 500px;
+    }
+
+    .product__item:nth-of-type(2) {
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+
+    .product__item:nth-of-type(3) {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+
+    .product__item:nth-of-type(4) {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+
+    .product__item {
+      position: relative;
+      max-height: 235px;
+    }
+
+    .product__item:nth-of-type(1) .product-absolute,
+    .product__item:nth-of-type(2) .product-absolute {
+      position: absolute;
+      padding: 15px 10px;
+      border-radius: 100%;
+      background: black;
+      color: white;
+      top: 20px;
+      left: 20px;
+      transition: 500ms;
+      -webkit-transition: 500ms;
+      -moz-transition: 500ms;
+      -ms-transition: 500ms;
+      -o-transition: 500ms;
+}
+
+    .product__item:nth-of-type(1) .product__info,
+    .product__item:nth-of-type(2) .product__info {
+      position: absolute;
+      left: 20px;
+      bottom: 15px;
+    }
+
+    .product__item:nth-of-type(3) .product__info,
+    .product__item:nth-of-type(4) .product__info {
+      position: absolute;
+      top: 15px;
+      left: 20px;
+    }
+
+    .product__item:nth-of-type(3) .product-absolute,
+    .product__item:nth-of-type(4) .product-absolute {
+      position: absolute;
+      padding: 15px 10px;
+      border-radius: 100%;
+      background: black;
+      color: white;
+      bottom: 15px;
+      left: 20px;
+      transition: 500ms;
+      -webkit-transition: 500ms;
+      -moz-transition: 500ms;
+      -ms-transition: 500ms;
+      -o-transition: 500ms;
+}
+
+    .product__grid {
+      margin-bottom: 30px;
+    }
+
+    .product {
+      margin-bottom: 70px;
+    }
+
+    /* Cell Phone */
+    .phone {
+      margin-bottom: 60px;
+    }
+
+    .phone__title {
+      margin-bottom: 30px;
+    }
+
+    .phone__title {
+      font-size: 36px;
+      line-height: 50px;
+    }
+
+    .phone-name {
+      max-width: 246px;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .phone__price {
+      font-size: 14px;
+    }
+
+    .phone__img {
+      margin-bottom: -60px;
+      transition: 500ms;
+      -webkit-transition: 500ms;
+      -moz-transition: 500ms;
+      -ms-transition: 500ms;
+      -o-transition: 500ms;
+}
+    .phone__img:hover{
+      box-shadow:2px 4px 10px grey;
+    }
+
+
+
+    /*  Computers & Laptop  */
+
+    .computers{
+      margin-top: 70px;
+    }
+
+    /* Playstation */
+    .ps{
+      margin-bottom: 70px;
+    }
+    .ps-items{
+      top: 94px;
+      left: 20px;
+    }
+    .ps__logo{
+      width: 270px;
+      margin-bottom: 20px;
+    }
+    .ps__title{
+      font-size: 48px;
+      line-height: 65px;
+      margin-bottom: 70px;
+    }
+    .ps-btn{
+      margin-left: 0;
+    }
+    .ps__img{
+      transition: 500ms;
+      -webkit-transition: 500ms;
+      -moz-transition: 500ms;
+      -ms-transition: 500ms;
+      -o-transition: 500ms;
+}
+    .ps__img:hover{
+      box-shadow: 1px 1px 10px grey;
+    }
+
+/* Top Seller */
+
+.top-seller{
+  margin-bottom: 70px;
+}
+
+/* Footer */
+.footer{
+  background-color: #313131;
+}
+
+.footer__items{
+  display: flex;
+}
+.footer__logo{
+  width: 187px;
+  margin-right: 143px;
+  margin-top: 30px;
+  object-fit: contain;
+}
+.footer__text{
+  font-size: 18px;
+  line-height: 24px;
+}
+.footer__search{
+  max-width: 520px;
+  margin-right: 54px;
+}
+.footer__btn{
+  width: 180px;
+}
+.social-network{
+  font-size: 40px;
+  display: flex;
+  align-items: flex-end;
+}
+.footer__link{
+  color: var(--text_color);
+}
+.instagramm{
+  margin: 0 25px 0px 23px;
+}
+.footer__menu{
+  padding: 50px 0 45px;
+}
+.menu-link{
+  color: var(--text_color);
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 15px;
+}
+.footer__text{
+  color: #ffffff;
+  padding: 30px 0 0 0;
+}
+/* Apple iPhone 12 Pro Max 128GB (Gray) */
+.ap{
+  margin-top: 50px;
+}
+.ap-img{
+  width: 80px;
+  margin: 15px 0;
+  transition: 1000ms;
+  -webkit-transition: 1000ms;
+  -moz-transition: 1000ms;
+  -ms-transition: 1000ms;
+  -o-transition: 1000ms;
+}
+.ap-img-main{
+  width: 409px;
+  transition: 1000ms;
+  -webkit-transition: 1000ms;
+  -moz-transition: 1000ms;
+  -ms-transition: 1000ms;
+  -o-transition: 1000ms;
+}
+.ap-img-main:hover , .ap-img:hover{
+  box-shadow: 6px 10px 29px rgb(0, 234, 255);
+}
+.ap__info-text{
+  margin-left: 23px;
+  list-style: unset ;
+}
+.ap__title{
+  font-size: 30px;
+  line-height: 70px;
+  margin: 0;
+  font-family: var(--f700);
+}
+.ap__price{
+  font-size: 24px;
+  line-height: 70px;
+  font-family: var(--f400);
+  margin: 0;
+}
+.ap__title-product{
+  font-size: 24px;
+  line-height: 70px;
+  margin: 0;
+}
+.ap__info-text{
+  font-size: 14px;
+  line-height: 25px;
+}
+.ap__btn .button{
+  margin: 15px;
+}
+
+/* VR */
+.vr{
+  margin-bottom: 70px;
+}
+.vr-absalute{
+  top: 20px;
+  right: 31px;
+}
+.vr__title{
+  font-size: 49px;
+  font-family: var(--f700);
+  line-height: 65px;
+  margin-bottom: 39px;
+  margin-left: -40px;
+}
+.vr__text{
+  font-size: 24px;
+  line-height: 32px;
+  font-family: var(--f400);
+  max-width: 454px;
+  margin-bottom:118px ;
+}
+/* Ps Carousel */
+
+.carousel-absalute{
+  top: 10px;
+  left: 20px;
+}
+.ps-carousel__title{
+  font-size: 48px;
+  line-height: 65px;
+  margin-bottom: 10px;
+  font-family: var(--f700);
+}
+.ps-carousel__text{
+  width: 454px;
+  font-size: 24px ;
+  line-height: 32px;
+  margin-bottom: 280px;
+  font-family: var(--f400);
+}
+.carousel-absalute .button{
+  margin: 0;
+}
+
+
+    /* Responsive Media */
+
+    @media (max-width: 1417px) {
+      .search__imput {
+        width: 370px;
+        height: 41px;
+      }
+      .product__item:nth-of-type(1) {
+        grid-column: span 3;
+        grid-row: span 2;
+        max-height: 500px;
+      }
+      .product__item:nth-of-type(2) {
+        grid-column: span 4;
+        grid-row: span 1;
+      }
+      .product__grid{
+        max-width: 655px;
+        margin: auto;
+      }
+      .product .button{
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: 1166px) {
+      .nav {
+        display: flex;
+        justify-content: center;
+      }
+
+      .nav__menu {
+        margin: 0;
+      }
+    }
+
+    @media (max-width: 1110px) {
+      .search__items {
+        flex-direction: column;
+      }
+
+      .logo {
+        margin: 15px 0;
+      }
+
+      .product__menu {
+        flex-wrap: wrap;
+      }
+
+      .product__link {
+        display: block;
+        margin: 0px 14px 15px;
+      }
+    }
+
+    @media (max-width: 812px) {
+      .nav__link {
+        margin: 15px 15px;
+      }
+      .carousel__title{
+        margin: 22px;
+        font-size: 29px;
+      }
+      .carousel__button{
+        margin-bottom: 20px;
+      }
+
+    }
+
+    @media (max-width: 783px) {
+      .search__btn {
+        font-size: 9px;
+      }
+
+      .search__imput {
+        width: 261px;
+        height: 32px;
+      }
+      .product__img{
+        max-width: 347px;
+      }
+      .product__item:nth-of-type(4) {
+        grid-column: span 4;
+        grid-row: span 1;
+      }
+      .product__grid {
+        max-width: 324px;
+      }
+      .product-absolute{
+        font-size: 9px;
+        padding: 10px 7px;
+      }
+      .product-name{
+        font-size: 15px;
+        line-height: 1px;
+      }
+    }
+
+    @media (max-width: 483px) {
+      .nav__menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .carousel__title{
+        font-size: 19px;
+      }
+      .product__img{
+        max-width: 291px;
+      }
+      .product__item:nth-of-type(1) .product-absolute,
+      .product__item:nth-of-type(2) .product-absolute {
+        padding: 10px 5px;
+  }
+  .product__item:nth-of-type(3) .product-absolute,
+    .product__item:nth-of-type(4) .product-absolute  {
+      padding: 10px 5px;
+    }
+  }
+  
+
+    @media(max-width: 446px){
+      .search__imput {
+        width: 136px;
+      }
+      .product__img{
+        max-width: 191px;
+      }
+      .product-name{
+        font-size: 13px;
+      }
+      .product__grid{
+        max-width: 190px;
+      }
+      .product-img2{
+        object-fit: contain;
+        height: 191px;
+      }
+    }
